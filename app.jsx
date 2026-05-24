@@ -59,9 +59,8 @@ function TopBar({ section, sectionJp, sectionIdx, total }) {
   return (
     <header className="topbar">
       <div className="topbar-cell">
-        {/* TODO: update your role/descriptor */}
-        <Label>STUDENT <Mono className="jp">// 学生</Mono></Label>
-        <Label>CS · DESIGN</Label>
+        <Label>COMMUNITY MGR <Mono className="jp">// 社区</Mono></Label>
+        <Label>BACKBOARD.IO</Label>
       </div>
       <div className="topbar-cell topbar-cell--center">
         <Label>{section.toUpperCase()}</Label>
@@ -111,7 +110,6 @@ function Hero() {
             <Mono className="page-num">/ 01 — INDEX <span className="jp">索引</span></Mono>
           </div>
           <div className="hero-meta-right">
-            {/* TODO: update coordinates to your city */}
             <Mono className="hero-coord">43.6532° N, 79.3832° W</Mono>
             <Mono className="hero-coord dim">多伦多 · TORONTO</Mono>
           </div>
@@ -126,13 +124,11 @@ function Hero() {
         <div className="hero-footer">
           <div className="hero-footer-col">
             <Label>NOW <span className="jp">// 现在</span></Label>
-            {/* TODO: update current role/school */}
-            <div className="hero-footer-line">Student · CS & Design</div>
-            <div className="hero-footer-line muted">Building things on the internet.</div>
+            <div className="hero-footer-line">Community Manager · Backboard.io</div>
+            <div className="hero-footer-line muted">Building community on the internet.</div>
           </div>
           <div className="hero-footer-col hero-footer-col--mid">
             <Label>RUNNING <span className="jp">// 运行中</span></Label>
-            {/* TODO: update your tools */}
             <Mono className="hero-running">▸ figma · vscode · arc</Mono>
             <Mono className="hero-running dim">▸ always in the terminal</Mono>
           </div>
@@ -325,7 +321,7 @@ function Contact() {
   }, []);
 
   const [copied, setCopied] = useState(false);
-  const EMAIL = "siqiqin6@gmail.com"; // TODO: update to your public email
+  const EMAIL = "jasmine.qin@queensu.ca";
   const copyMail = () => {
     navigator.clipboard?.writeText(EMAIL);
     setCopied(true);
@@ -344,9 +340,9 @@ function Contact() {
 
       <div className="contact-grid">
         <h2 className="contact-headline">
-          Say hello —<br/>
-          I don't bite.<br/>
-          <span style={{ fontSize: "0.55em", color: "var(--ink-60)", fontWeight: 400 }}>usually.</span>
+          I love meeting<br/>
+          new people,<br/>
+          <span className="hero-headline-accent">come say hi!</span>
         </h2>
 
         <div className="contact-side">
@@ -355,10 +351,8 @@ function Contact() {
             <span className="contact-mail-addr">{EMAIL}</span>
           </button>
           <div className="contact-links">
-            {/* TODO: fill in your actual links */}
+            <a href="https://x.com/tangghulu" target="_blank"><Mono>↗ X / @TANGGHULU</Mono></a>
             <a href="https://github.com/tangghulu" target="_blank"><Mono>↗ GITHUB / TANGGHULU</Mono></a>
-            <a href="#"><Mono>↗ LINKEDIN / TODO</Mono></a>
-            <a href="#"><Mono>↗ READ.CV / TODO</Mono></a>
           </div>
         </div>
       </div>
