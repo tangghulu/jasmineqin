@@ -44,30 +44,32 @@ function StatusBar() {
 // ─────────────────────────────────────────────────────────────
 
 const TRACKS = [
-  { artist: "Tatsuro Yamashita", title: "Sparkle",      bpm: 124, mood: "(๑˃ᴗ˂)ﻭ" },
-  { artist: "Haruomi Hosono",   title: "Honey Moon",    bpm: 96,  mood: "(´｡• ᵕ •｡`)" },
-  { artist: "Mariya Takeuchi",  title: "Plastic Love",  bpm: 110, mood: "✧･ﾟ: *✧" },
-  { artist: "Toe",              title: "Goodbye",       bpm: 84,  mood: "( ◜‿◝ )♡" },
-  { artist: "Cornelius",        title: "Drop",          bpm: 102, mood: "₍ᐢ. .ᐢ₎" },
+  { artist: "Noah Kahan",        title: "Maine",        bpm: 150, mood: "(๑˃ᴗ˂)ﻭ" },
+  { artist: "Malcolm Todd",      title: "Breathe",      bpm: 78,  mood: "(´｡• ᵕ •｡`)" },
+  { artist: "Backseat Lovers",   title: "Maple Syrup",  bpm: 140, mood: "✧･ﾟ: *✧" },
+  { artist: "Ichiko Aoba",       title: "Bouquet",      bpm: 72,  mood: "( ◜‿◝ )♡" },
+  { artist: "The Marias",        title: "Sienna",       bpm: 88,  mood: "₍ᐢ. .ᐢ₎" },
 ];
 
 function NowPlaying() {
   const [idx, setIdx] = useState(0);
   const [pos, setPos] = useState(38);
+  const [visible, setVisible] = useState(true);
   useEffect(() => {
     const i = setInterval(() => setPos(p => (p >= 100 ? 0 : p + 0.7)), 240);
     return () => clearInterval(i);
   }, []);
   const t = TRACKS[idx];
-  const next = () => { setIdx((idx + 1) % TRACKS.length); setPos(0); };
   const bars = 18;
   const filled = Math.round((pos / 100) * bars);
+
+  if (!visible) return null;
 
   return (
     <aside className="now-playing">
       <div className="np-head">
         <span className="mono">┌─ NOW PLAYING ──────────</span>
-        <button className="np-close" aria-label="next track" onClick={next}>
+        <button className="np-close" aria-label="close" onClick={() => setVisible(false)}>
           <span className="mono">[ ✕ ]</span>
         </button>
       </div>
