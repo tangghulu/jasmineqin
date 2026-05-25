@@ -243,9 +243,11 @@ section {
   font-weight: 500;
   letter-spacing: -0.035em;
   line-height: 0.98;
-  margin: 0;
+  margin: 0 auto;
   text-wrap: balance;
   color: var(--ink);
+  max-width: 60%;
+  text-align: center;
 }
 .hero-headline-accent {
   color: var(--accent);
