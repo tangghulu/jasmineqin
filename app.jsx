@@ -115,22 +115,21 @@ function Hero() {
           </div>
         </div>
 
-        {/* TODO: update headline to your own words */}
         <h1 className="hero-headline">
           Jasmine Qin<br/>
-          <span className="hero-headline-accent">— building things,<br/>learning everything.</span>
+          <span className="hero-headline-accent">strategy, systems,<br/>and the people in between.</span>
         </h1>
 
         <div className="hero-footer">
           <div className="hero-footer-col">
             <Label>NOW <span className="jp">// 现在</span></Label>
             <div className="hero-footer-line">Community Manager · Backboard.io</div>
-            <div className="hero-footer-line muted">Building community on the internet.</div>
+            <div className="hero-footer-line muted">Computing (Hons) · Queen's '28 · 3.77 GPA</div>
           </div>
           <div className="hero-footer-col hero-footer-col--mid">
-            <Label>RUNNING <span className="jp">// 运行中</span></Label>
-            <Mono className="hero-running">▸ figma · vscode · arc</Mono>
-            <Mono className="hero-running dim">▸ always in the terminal</Mono>
+            <Label>SEEKING <span className="jp">// 目标</span></Label>
+            <Mono className="hero-running">▸ consulting internship · 2027</Mono>
+            <Mono className="hero-running dim">▸ open to: strategy · ops · tech</Mono>
           </div>
           <div className="hero-footer-col hero-footer-col--right">
             <Label>SCROLL <span className="jp">// 向下</span></Label>
@@ -153,71 +152,69 @@ function About() {
 
       <div className="section-head">
         <Mono className="page-num">/ 02 — ABOUT <span className="jp">关于</span></Mono>
-        <Label>WHO IS THIS PERSON <span className="kaomoji-inline">(´・ω・`)</span></Label>
+        <Label>WHO IS THIS PERSON</Label>
       </div>
 
       <div className="about-grid">
         <div className="about-headline">
-          {/* TODO: update your personal tagline */}
           <h2>
-            Curious about how<br/>
-            things <em>work</em> — then<br/>
-            making them better.
+            I find the problem<br/>
+            before building<br/>
+            the <em>solution.</em>
           </h2>
-          <Mono className="about-headline-caption">— a working rule ✦</Mono>
+          <Mono className="about-headline-caption">— computing student, strategy-first ✦</Mono>
         </div>
 
         <div className="about-body">
-          {/* TODO: write your bio */}
           <p>
-            I'm <strong>Jasmine Qin</strong>, a student interested in the intersection
-            of code and design. I like building things that feel considered — interfaces
-            that are fast, honest, and a little bit playful.
+            I'm <strong>Jasmine Qin</strong> — a Computing (Honours) student at Queen's University
+            (3.77 GPA, Dean's List) interested in the intersection of technology and business strategy.
+            I'm bilingual in English and Mandarin and targeting consulting for Summer 2027.
           </p>
           <p>
-            Currently studying and working on side projects that probably have too many
-            features. Always looking for the simplest version of a complex idea.
+            I've co-led go-to-market strategy at a tech startup, relaunched a dormant entrepreneurship
+            summit, built outreach infrastructure engaging 100+ organizations, and shipped production
+            features used by real people — all before my second year.
           </p>
           <p>
-            I'm drawn to systems that are both rigorous and expressive. <span className="kaomoji-inline">٩(◕‿◕)۶</span>
+            I'm drawn to structured problem-solving: the kind of work where clarity is the
+            deliverable and the details are what separate a good answer from the right one.
           </p>
         </div>
 
         <div className="about-side">
-          {/* TODO: update each field */}
           <div className="kv">
             <Label>BASED</Label>
             <Mono>Toronto · CA</Mono>
           </div>
           <div className="kv">
             <Label>STUDYING</Label>
-            <Mono>CS · Design</Mono>
+            <Mono>Computing · Queen's '28</Mono>
           </div>
           <div className="kv">
-            <Label>INTERESTS</Label>
-            <Mono>Systems, interfaces</Mono>
+            <Label>GPA</Label>
+            <Mono>3.77 · Dean's List</Mono>
           </div>
           <div className="kv">
-            <Label>READS</Label>
-            <Mono>Docs, long essays</Mono>
+            <Label>LANGUAGES</Label>
+            <Mono>English · Mandarin</Mono>
           </div>
           <div className="kv">
-            <Label>TYPE</Label>
-            <Mono>JetBrains Mono</Mono>
+            <Label>TOOLS</Label>
+            <Mono>Figma · Next.js · Jira</Mono>
           </div>
           <div className="kv">
-            <Label>VIBE</Label>
-            <Mono>ASCII clouds ✦</Mono>
+            <Label>SEEKING</Label>
+            <Mono>Consulting '27 ✦</Mono>
           </div>
         </div>
       </div>
 
-      <window.TerminalNote title="NOTES.TXT" kao="(｡◕‿◕｡)">
-        {/* TODO: update your own manifesto / values */}
+      <window.TerminalNote title="NOTES.TXT">
         <p>
-          <strong>1.</strong> Simplicity over cleverness. <strong>2.</strong> Monospace is honest.
-          <strong>3.</strong> Animation should explain, not distract. <strong>4.</strong> Design
-          is craft. <strong>5.</strong> Cute is not unserious.
+          <strong>1.</strong> Structure before speed. <strong>2.</strong> Data tells a story — find the narrative.
+          <strong>3.</strong> Clear communication is a competitive advantage. <strong>4.</strong> Leadership
+          is infrastructure. <strong>5.</strong> Details compound.
         </p>
       </window.TerminalNote>
     </section>
@@ -228,31 +225,46 @@ function About() {
 // WORK — project list with hover states
 // ─────────────────────────────────────────────────────────────
 
-// TODO: replace with your own projects
 const PROJECTS = [
   {
-    idx: "001", year: "2025",
-    title: "Project One",
-    client: "Personal",
-    role: "Design + Engineering",
-    tags: ["web", "design"],
-    blurb: "TODO: describe this project in one or two sentences. What problem did it solve? What was interesting about it?",
+    idx: "001", year: "2026",
+    title: "Backboard.io",
+    client: "Remote",
+    role: "Community Manager",
+    tags: ["strategy", "GTM", "ops"],
+    blurb: "Managed 8 engineering interns across concurrent workstreams while co-leading go-to-market strategy with senior leadership. Synthesized developer feedback into positioning frameworks and delivered live product demos to external audiences.",
   },
   {
     idx: "002", year: "2025",
-    title: "Project Two",
-    client: "Coursework",
-    role: "Developer",
-    tags: ["systems", "research"],
-    blurb: "TODO: describe this project in one or two sentences.",
+    title: "Kingston AI Collective",
+    client: "Kingston, ON",
+    role: "Director of Outreach & Logistics",
+    tags: ["outreach", "partnerships", "events"],
+    blurb: "Built outreach infrastructure from scratch — CRM tracker, email pipelines, and engagement strategy — engaging 100+ companies, researchers, and policymakers. Secured 10+ strategic partnerships and directed large-scale event execution across a 7-person team.",
   },
   {
-    idx: "003", year: "2024",
-    title: "Project Three",
-    client: "Self-initiated",
-    role: "Designer",
-    tags: ["interface", "experiment"],
-    blurb: "TODO: describe this project in one or two sentences.",
+    idx: "003", year: "2025",
+    title: "Queen's Startup Summit",
+    client: "Queen's University",
+    role: "Co-Chair",
+    tags: ["leadership", "entrepreneurship"],
+    blurb: "Relaunched QSS after a year of inactivity, rebuilding the founding team and restoring relationships with investors and mentors. Managed a cross-functional director team across 5 departments from sponsorship to day-of execution.",
+  },
+  {
+    idx: "004", year: "2025",
+    title: "Queen's Women in Computing",
+    client: "Queen's University",
+    role: "Web Developer",
+    tags: ["next.js", "tailwind", "design"],
+    blurb: "Proposed, designed, and shipped 3 features — events page, photo gallery, and Meet the Team — using Next.js and Tailwind CSS. Translated club requirements into mobile-optimized components, improving usability and engagement.",
+  },
+  {
+    idx: "005", year: "2025",
+    title: "Sophena Marketing",
+    client: "Aurora, ON",
+    role: "Technology Intern",
+    tags: ["marketing", "figma", "strategy"],
+    blurb: "Developed and executed a scalable social media and branding strategy, driving growth in impressions across client platforms. Designed client-facing presentations in Figma, translating data insights into clear visual narratives.",
   },
 ];
 
@@ -260,10 +272,10 @@ function Work() {
   const [hover, setHover] = useState(null);
   return (
     <section className="work" data-screen-label="03 Work">
-      <window.AsciiDivider label="SELECTED WORK" sublabel="精选作品 · PROJECTS" />
+      <window.AsciiDivider label="SELECTED WORK" sublabel="精选作品 · EXPERIENCE & LEADERSHIP" />
       <div className="section-head">
         <Mono className="page-num">/ 03 — SELECTED WORK <span className="jp">精选</span></Mono>
-        <Label>A LIST OF THINGS <span className="kaomoji-inline">⌐■_■</span></Label>
+        <Label>A LIST OF THINGS</Label>
       </div>
 
       <ol className="project-list">
@@ -335,7 +347,7 @@ function Contact() {
       <window.AsciiDivider label="CONTACT" sublabel="联系 · GET IN TOUCH" />
       <div className="section-head">
         <Mono className="page-num">/ 04 — CONTACT <span className="jp">联系</span></Mono>
-        <Label>END OF DOCUMENT <span className="kaomoji-inline">(*ﾟ▽ﾟ)ﾉ</span></Label>
+        <Label>END OF DOCUMENT</Label>
       </div>
 
       <div className="contact-grid">
@@ -358,10 +370,7 @@ function Contact() {
       </div>
 
       <div className="colophon">
-        <div className="colophon-col">
-          <Label>COLOPHON</Label>
-          <Mono>Set in JetBrains Mono + Noto Sans SC. Built by hand. ASCII art generated client-side at runtime.</Mono>
-        </div>
+        <div className="colophon-col"></div>
         <div className="colophon-col">
           <Label>LAST UPDATED</Label>
           <Mono>{new Date().toISOString().slice(0,10)}</Mono>
