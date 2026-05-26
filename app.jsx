@@ -162,7 +162,7 @@ function About() {
             before building<br/>
             the <em>solution.</em>
           </h2>
-          <Mono className="about-headline-caption">— computing student, strategy-first ✦</Mono>
+          <Mono className="about-headline-caption">computing student, strategy-first ✦</Mono>
         </div>
 
         <div className="about-body">
@@ -190,10 +190,6 @@ function About() {
             <Mono>Computing · Queen's '28</Mono>
           </div>
           <div className="kv">
-            <Label>GPA</Label>
-            <Mono>3.77 · Dean's List</Mono>
-          </div>
-          <div className="kv">
             <Label>LANGUAGES</Label>
             <Mono>English · Mandarin</Mono>
           </div>
@@ -210,9 +206,11 @@ function About() {
 
       <window.TerminalNote title="NOTES.TXT">
         <p>
-          <strong>1.</strong> Structure before speed. <strong>2.</strong> Data tells a story — find the narrative.
-          <strong>3.</strong> Clear communication is a competitive advantage. <strong>4.</strong> Leadership
-          is infrastructure. <strong>5.</strong> Details compound.
+          <strong>1.</strong> Over-communicate. The check-in that feels like a time waster is the one that catches the problem early.{" "}
+          <strong>2.</strong> People are more willing to connect than you think. Talk to everyone.{" "}
+          <strong>3.</strong> Being able to explain the technology will matter more than the technology itself, in most rooms.{" "}
+          <strong>4.</strong> Do good things, even when no one is watching.{" "}
+          <strong>5.</strong> The details nobody notices are the ones everybody would if they were wrong.
         </p>
       </window.TerminalNote>
     </section>
@@ -238,7 +236,7 @@ const PROJECTS = [
     client: "Kingston, ON",
     role: "Director of Outreach & Logistics",
     tags: ["outreach", "partnerships", "events"],
-    blurb: "Built outreach infrastructure from scratch — CRM tracker, email pipelines, and engagement strategy — engaging 100+ companies, researchers, and policymakers. Secured 10+ strategic partnerships and directed large-scale event execution across a 7-person team.",
+    blurb: "Built outreach infrastructure from scratch: CRM tracker, email pipelines, and engagement strategy, engaging 100+ companies, researchers, and policymakers. Secured 10+ strategic partnerships and directed large-scale event execution across a 7-person team.",
   },
   {
     idx: "003", year: "2025",
@@ -254,7 +252,7 @@ const PROJECTS = [
     client: "Queen's University",
     role: "Web Developer",
     tags: ["next.js", "tailwind", "design"],
-    blurb: "Proposed, designed, and shipped 3 features — events page, photo gallery, and Meet the Team — using Next.js and Tailwind CSS. Translated club requirements into mobile-optimized components, improving usability and engagement.",
+    blurb: "Proposed, designed, and shipped 3 features (events page, photo gallery, Meet the Team) using Next.js and Tailwind CSS. Translated club requirements into mobile-optimized components, improving usability and engagement.",
   },
   {
     idx: "005", year: "2025",
