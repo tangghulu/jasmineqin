@@ -167,18 +167,16 @@ function About() {
 
         <div className="about-body">
           <p>
-            I'm <strong>Jasmine Qin</strong> — a Computing (Honours) student at Queen's University
-            (3.77 GPA, Dean's List) interested in the intersection of technology and business strategy.
-            I'm bilingual in English and Mandarin and targeting consulting for Summer 2027.
+            Hey, I'm <strong>Jasmine</strong>, currently working as a community manager at Backboard.io,
+            an Ottawa-based AI startup. I've always been drawn to solving problems from unexpected angles.
           </p>
           <p>
             I've co-led go-to-market strategy at a tech startup, relaunched a dormant entrepreneurship
             summit, built outreach infrastructure engaging 100+ organizations, and shipped production
-            features used by real people — all before my second year.
+            features used by real people.
           </p>
           <p>
-            I'm drawn to structured problem-solving: the kind of work where clarity is the
-            deliverable and the details are what separate a good answer from the right one.
+            Currently looking for summer 2027 consulting internships.
           </p>
         </div>
 
